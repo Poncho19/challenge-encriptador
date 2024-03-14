@@ -1,0 +1,65 @@
+.cuerpoHTML{
+    background-image: url("./elementos-encriptador/cyberpunk.webp");
+}
+
+.logo-alura{
+    margin-top: 40px;
+}
+
+.caja-texto{
+    width: 95%;
+    height: 550px;
+    margin: 25px 10px 0px 25px;
+    padding: 10px;
+    border-radius: 24px;
+    opacity: 0.6;
+    font-size: xx-large;
+    border: none;
+    background-color: yellow;
+}
+
+.contenedor{
+    display: flex;
+    align-content: center;
+}
+
+.cuadro{
+    background-color: rgb(235, 239, 243);
+    opacity: 0.6;
+    width: 350px;
+    height: 600px;
+    border-radius: 24px;
+    margin-left: 30px;
+}
+
+.boton-encriptar{
+    color:white;
+    border: none;
+    background-color: #0A3871;
+    justify-content: center;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    
+}
+
+.boton-desencriptar{
+    color:#0A3871;
+    border-color: #0A3871;
+    background-color: #D8DFE8;    
+      
+}
+
+.botones{
+    align-items: flex-end;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.boton-desencriptar, .boton-encriptar{
+    border-radius: 24px;
+    gap: 8px;
+    width: 331px;
+    height: 64px;
+    text-align: center;
+    font-size: x-large;   
+}
