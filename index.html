@@ -11,24 +11,39 @@
         <img src="./elementos-encriptador/Logo.png" alt="Logo alura">
     </div>
     <div class="contenedor">
-        <div class="texto-botones">
-            <div class="area-texto">
-                <textarea type="text" name="text" class="caja-texto" placeholder="Ingrese texto aqui"></textarea>
-            </div>            
-            <div class="botones">
-                <button class="boton-encriptar">Encriptar</button> 
-                <button class="boton-desencriptar">Desencriptar</button>       
+        <!--Caja 1 = Contiene los botones y la caja de texto-->    
+        <div class="caja-1">
+            <div>
+                <textarea name="texto1" id="insertar-text" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input class="boton1" type="button" value="Encriptar">
+                <input class="boton2" type="button" value="Desencriptar">
+            </div>        
+        </div>
+        <div class="caja-2">
+            <div>
+                <textarea name="texto2" id="solo-text" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input class="boton3" type="button" value="Copiar">
             </div>
         </div>
-        <div class="cuadro">
-        
-        </div>
-    </div>
-    
-    
-   
-    
+    </div>  
     
     <script src="./encriptador.js"></script>
 </body>
+<footer>
+
+    <div class="elementos-footer">
+        <div class="autor">
+            <p><em>Made by </em><b>Alfonso Rafael Camacho Guerra</b></p>
+        </div>
+        <div>
+            <img src="/elementos-encriptador/linkedin.png" alt="Linkedin">
+            <img src="/elementos-encriptador/github.png" alt="GitHub">
+        </div>
+    </div>
+    
+</footer>
 </html>
