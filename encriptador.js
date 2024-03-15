@@ -2,23 +2,33 @@
 let palabraFrase;
 
 
-//palabraFrase = prompt("Dame la palabra o frase a encriptar: ");
+//Funcionalidad del boton encriptador
+function botonEncriptador(){
+    let palabraEncriptada = "";
+    let palabraNormal = document.getElementById("area-1").value;
+    console.log(palabraNormal);    
+    palabraEncriptada = encriptar();
+    document.getElementById("area-2").value = palabraEncriptada; 
+    return palabraEncriptada;
+}
 
-//console.log("La frase o palabra tiene " + (palabraFrase.length));
+//Funcion para encriptar
+function encriptar(palabraFrase){
+    palabraFrase = palabraFrase.replaceAll('e',"enter");
+    palabraFrase = palabraFrase.replaceAll('i',"imes");
+    palabraFrase = palabraFrase.replaceAll('a',"ai");
+    palabraFrase = palabraFrase.replaceAll('o',"ober");
+    palabraFrase = palabraFrase.replaceAll('u',"ufat");
+    return palabraFrase;
+}
 
-/*palabraFrase = palabraFrase.replaceAll('e',"enter");
-palabraFrase = palabraFrase.replaceAll('i',"imes");
-palabraFrase = palabraFrase.replaceAll('a',"ai");
-palabraFrase = palabraFrase.replaceAll('o',"ober");
-palabraFrase = palabraFrase.replaceAll('u',"ufat");
-*/
 
-/*console.log(palabraFrase);
-
-palabraFrase = palabraFrase.replaceAll("enter",'e');
-palabraFrase = palabraFrase.replaceAll("imes",'i');
-palabraFrase = palabraFrase.replaceAll("ai",'a');
-palabraFrase = palabraFrase.replaceAll("ober",'o');
-palabraFrase = palabraFrase.replaceAll("ufat",'u');
-
-console.log(palabraFrase);*/
+//Funcion para desencriptar
+function desencriptar(palabraFrase){
+    palabraFrase = palabraFrase.replaceAll("enter",'e');
+    palabraFrase = palabraFrase.replaceAll("imes",'i');
+    palabraFrase = palabraFrase.replaceAll("ai",'a');
+    palabraFrase = palabraFrase.replaceAll("ober",'o');
+    palabraFrase = palabraFrase.replaceAll("ufat",'u');
+    return palabraFrase;
+}
