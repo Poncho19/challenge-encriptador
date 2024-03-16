@@ -7,9 +7,8 @@ function botonEncriptador(){
     let palabraEncriptada = "";
     let palabraNormal = document.getElementById("area-1").value;
     console.log(palabraNormal);    
-    palabraEncriptada = encriptar();
-    document.getElementById("area-2").value = palabraEncriptada; 
-    return palabraEncriptada;
+    palabraEncriptada = encriptar(palabraNormal);
+    return document.getElementById("area-2").innerHTML = palabraEncriptada;
 }
 
 //Funcion para encriptar
