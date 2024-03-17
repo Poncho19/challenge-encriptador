@@ -6,9 +6,26 @@ let palabraFrase;
 function botonEncriptador(){
     let palabraEncriptada = "";
     let palabraNormal = document.getElementById("area-1").value;
-    console.log(palabraNormal);    
     palabraEncriptada = encriptar(palabraNormal);
     return document.getElementById("area-2").innerHTML = palabraEncriptada;
+}
+
+//Funcionalidad del boton desencriptar
+function botonDesencriptar(){
+    let palabraEncriptada = document.getElementById("area-1").value;
+    palabraNormal = desencriptar(palabraEncriptada);
+    return document.getElementById("area-2").innerHTML = palabraNormal;
+}
+
+//Funcionalidad del boton copiar
+function botonCopiar(){ 
+    
+    document.getElementById("area-2").select();
+    document.execCommand('copy');
+    
+
+
+    return;
 }
 
 //Funcion para encriptar
