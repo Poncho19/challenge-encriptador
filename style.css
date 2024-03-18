@@ -10,20 +10,32 @@ body{
 }
 
 .contenedor{
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;  
+    flex-wrap: wrap;  
     flex-direction: row;
-    justify-content: center;
+    justify-content: center;    
+    align-items: center;
     width: 100vw;
     margin: 0 auto;
 }
 
+.contenedor>.caja-1{
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: center;
+}
+
 #area-1, #area-2{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     border-radius: 24px;
     padding: 20px;
+    color: black;
+    background-color: #D8DFE8;
+    font-size: large;
+    font-family: sans-serif;
+    
 }
 
 #area-1{    
@@ -32,7 +44,7 @@ body{
 
 #area-2{
     opacity: 0.6;
-    border: none;
+    border: 0;
 }
 
 .info{
@@ -46,12 +58,16 @@ textarea{
     -moz-box-sizing: border-box;
     box-sizing: border-box;	
     width: 100%;
+    resize:none;
+    font-size: larger;
+    
 }
 
 .botones-1-2{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;    
 }
 
 .botones-3{
@@ -77,6 +93,7 @@ textarea{
 .boton2{
     background-color: #D8DFE8;
     color: #0A3871;
+    margin-left: 10px;
 }
 
 .boton3{
@@ -89,7 +106,7 @@ textarea{
 .caja-1{
     display: flex;
     flex-direction: column;
-    margin-right: 10dvb;
+    margin-right: 24px;
 }
 
 .caja-2{
@@ -97,6 +114,7 @@ textarea{
     flex-direction: column;
     background-color: white;
     border-radius: 24px;
+    background-color: #D8DFE8;
     
 }
 
@@ -113,4 +131,10 @@ textarea{
     font-size: x-large;
     font-family: sans-serif;
     text-align: center;
+}
+
+@media (max-width:450px){
+    .caja-1,.caja-2{
+        width: 70%;
+    }
 }
