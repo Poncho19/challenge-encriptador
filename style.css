@@ -133,8 +133,16 @@ textarea{
     text-align: center;
 }
 
+.info>strong{
+    font-size: x-large;
+}
+
 .linkedin{
     margin-right: 25px;
+}
+
+.red-social{
+    margin: 10px;
 }
 
 @media (max-width:450px){
