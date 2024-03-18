@@ -133,6 +133,10 @@ textarea{
     text-align: center;
 }
 
+.linkedin{
+    margin-right: 25px;
+}
+
 @media (max-width:450px){
     .caja-1,.caja-2{
         width: 70%;
